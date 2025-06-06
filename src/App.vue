@@ -1,10 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <CasinoView />
+  </div>
 </template>
+
+<script>
+import CasinoView from "@/views/CasinoView.vue";
+export default {
+  name: "App",
+  components: { CasinoView },
+};
+</script>
 
 <style>
 #app {
